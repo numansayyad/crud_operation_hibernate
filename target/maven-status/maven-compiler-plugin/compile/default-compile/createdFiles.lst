@@ -1,0 +1,7 @@
+com\main\config\HibernateConfig.class
+com\main\dao\Dao.class
+com\main\App.class
+com\main\entity\User.class
+com\main\main\Main.class
+com\main\controller\Controller.class
+com\main\service\Service.class
