@@ -18,6 +18,7 @@ public class Main {
            int choice= sc.nextInt();
             System.out.println("1.save the user");
             System.out.println("2.exit");
+            System.out.println("3.Update User");
 
             if (choice == 1) {
             
@@ -41,7 +42,25 @@ public class Main {
             } else if (choice == 2) {
                 System.out.println("thank you ");
                 break;
-            } else {
+            }
+            else if(choice == 3){
+                System.out.println("Enter the id you want to update ");
+                int id=sc.nextInt();
+                sc.nextLine();
+                System.out.println("Enter username you want to update ");
+                String username=sc.nextLine();
+                System.out.println("Enter Email you want to update ");
+                String email=sc.nextLine();
+                System.out.println("enter password you want to update");
+                String password=sc.nextLine();
+                User s2 = new User(id, username, email, password);
+                String msg= maincontroller.updateuser(s2);
+                System.out.println(msg);
+                break;
+
+            }
+            
+            else {
                 System.out.println("invalid choice");
             }
             sc.close();

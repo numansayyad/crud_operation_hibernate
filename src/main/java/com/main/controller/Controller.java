@@ -10,4 +10,9 @@ public class Controller {
       String msg=  mainservice.saveuser(obj);
         return msg;
     }
+
+    public String updateuser(User obj){
+    String msg=  mainservice.updateuser(obj);
+    return msg;
+    }
 }
